@@ -1,0 +1,182 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-grid{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'sidebar main main main'
+    'sidebar main main main'
+    'footer footer footer footer';
+    width: auto;
+    height: auto;
+    
+}
+
+.header{
+    
+    grid-area: header;
+    background-color: #112D4E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+
+
+.main{
+    
+    grid-area: main;
+    background-color: #D6E6F2;
+    display: grid;
+    grid-template-areas:
+    'me gitpage'
+    'photos photos';
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.me{
+    grid-area: me;
+    display: flex;
+    flex-flow: column ;
+    height: 80vh;
+    border-right: 0.5px solid black;
+
+}
+.me img{
+    width: 15vw;
+    height: 8vh;
+    border-radius: 50%;
+    
+}
+
+@keyframes danpic {
+    from{
+        box-shadow: 2px 2px 5px black;
+    }
+    to{
+        box-shadow: 2px 2px 5px black;
+        height: 8.5vh;
+        width: 15.5vw;
+    }
+    
+}
+
+.me img:hover{
+    animation: danpic 2s alternate;
+
+}
+.me h1{
+    font-size:medium;
+    
+
+}
+.me h3{
+    font-size:small;
+    
+
+}
+
+.gitpage{
+    grid-area: gitpage;
+    flex-flow: column;
+    height: 80vh;
+    display: flex;
+}
+
+.gitpage h1{
+    font-size: medium;
+}
+.gitpage p{
+    font-style:oblique;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+}
+.gitpage a{
+    text-decoration: none;
+    color: crimson;
+}
+.gitpage img{
+    width: 20vw;
+    height: 8vh; 
+}
+.photos{
+    grid-area: photos;
+    border: 1px solid black;
+    background-color: BAD7DF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 15vh;
+}
+
+.photos img{
+    width: 13.6vw;
+    height: 10vh;
+    
+}
+
+
+
+.sidebar{
+    width: 11vw;
+    grid-area: sidebar;
+    background-color: #B9D7EA;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar p{
+    text-align: center;
+    align-self: center;
+
+}
+   
+.footer{
+    
+    grid-area: footer;
+    background-color: #3F72AF;
+    display: grid;
+    grid-template-areas:
+    'phonenum phonenum'
+    'email email';
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.phonenum{
+    display: flex;
+    grid-area: phonenum;
+    font-style: italic;
+    font-weight: bolder;
+    justify-content: center;
+
+}
+
+.email{
+    display: flex;
+    grid-area: email;
+    font-style: italic;
+    font-weight: bolder;
+    align-items:baseline;
+    justify-content: center;
+    border-top: 1px  #000000;
+    
+}
+
+
+.imghead{
+    width: 7vw;
+    
+}
+
