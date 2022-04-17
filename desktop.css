@@ -41,7 +41,7 @@ body{
 }
 .me img{
     width: 10vw;
-    height: 11vh;
+    height: 11.5vh;
     border-radius: 50%; 
 }
 @keyframes danpic {
@@ -119,7 +119,7 @@ body{
     flex-direction: column;
     padding-top: -2vh;
     text-decoration: none;
-    color:#001E6C;
+    color:#0044bc;
     font-size:2.5vh;
     text-align: center;
 }
@@ -160,7 +160,8 @@ body{
     height: 2vh;
     font-size: x-large;
     font-weight: bolder;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 1.5vh;
 }
 #email{
     display: flex;
@@ -170,7 +171,7 @@ body{
     align-items:baseline;
     font-size: x-large;
     justify-content: center;
-    border-top: 1px  #000000;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+    border-top: 1px solid black;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }

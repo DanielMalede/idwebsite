@@ -77,8 +77,10 @@ body{
 }
 .gitpage h1{
     font-size: medium;
-    text-align: left;
+    text-align: right;
     padding-bottom: 2vh;
+    direction: rtl;
+
 }
 .gitpage span{
     font-family: 'Raleway', sans-serif;
@@ -119,7 +121,7 @@ body{
     flex-direction: column;
     padding-top: -2vh;
     text-decoration: none;
-    color:#001E6C;
+    color:#0044bc;
     font-size:1.4vh;
 }
 #main1:target{
@@ -156,7 +158,8 @@ body{
     height: 2vh;
     font-size: medium;
     font-weight: bolder;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }
 #email{
     display: flex;
@@ -165,6 +168,7 @@ body{
     font-weight: bolder;
     align-items:baseline;
     justify-content: center;
-    border-top: 1px  #000000;
-    padding: 1vh;
+    border-top: 1px solid black;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
 }
