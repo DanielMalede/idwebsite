@@ -1,10 +1,8 @@
-
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .div-grid{
     display: grid;
     grid-template-areas:
@@ -14,23 +12,18 @@ body{
     'footer footer footer footer';
     width: auto;
     height: auto;
-    
 }
-
 .header{
-    
     grid-area: header;
     background-color: #112D4E;
     display: flex;
     align-items: center;
     justify-content: space-around;
-  
 }
-
-
-
+.imghead{
+    width: 7vw;
+}
 .main{
-    
     grid-area: main;
     background-color: #D6E6F2;
     display: grid;
@@ -38,26 +31,19 @@ body{
     'me gitpage'
     'photos photos';
     width: auto;
-    height: auto;
-    
-    
+    height: auto; 
 }
-
 .me{
     grid-area: me;
     display: flex;
     flex-flow: column ;
     height: 80vh;
-    border-right: 0.5px solid black;
-
 }
 .me img{
     width: 15vw;
     height: 8vh;
     border-radius: 50%;
-    
 }
-
 @keyframes danpic {
     from{
         box-shadow: 2px 2px 5px black;
@@ -67,67 +53,59 @@ body{
         height: 8.5vh;
         width: 15.5vw;
     }
-    
 }
-
 .me img:hover{
     animation: danpic 2s alternate;
-
 }
 .me h1{
     font-size:medium;
-    
-
+    padding: 1vw;
 }
 .main p{
-    font-style:oblique;
     font-size: small;
     font-weight: bold;
+    padding: 1vw;
     text-align: center;
-    
-
+    font-family: 'Raleway', sans-serif;
 }
-
 .gitpage{
     grid-area: gitpage;
     flex-flow: column;
-    height: 80vh;
+    height: auto;
     display: flex;
+    border-left: 0.5px solid black;
 }
-
 .gitpage h1{
     font-size: medium;
     text-align: left;
     padding-bottom: 2vh;
 }
-.gitpage p{
-    font-style:oblique;
+.gitpage span{
+    font-family: 'Raleway', sans-serif;
     font-size: small;
     font-weight: bold;
     text-align: center;
-    margin-top: -1.2vh;
+    padding-bottom: 1vh;
 }
 .gitpage a{
     text-decoration: none;
-    color: crimson;
+    color: #30AADD;
 }
 .gitpage img{
-    width: 20vw;
+    width: 17vw;
     height: 8vh; 
 }
-.photos{
+#photos{
     grid-area: photos;
-    border: 1px solid black;
-    background-color: BAD7DF;
-    height: 15vh;
+    background-color: #BAD7DF;
+    height: auto;
 }
-
-.photos img{
+#photos img{
     width: 13.8vw;
-    height: 14.8vh;
+    height: 11vh;
 }
 .sidebar{
-    width: 11vw;
+    width: auto;
     grid-area: sidebar;
     background-color: #B9D7EA;
     display: flex;
@@ -135,8 +113,6 @@ body{
 }
 .sidebar p{
     align-self: flex-start;
-    
-
 }
 .sidebar a{
     display: flex;
@@ -144,13 +120,23 @@ body{
     padding-top: -2vh;
     text-decoration: none;
     color:#001E6C;
-    font-size:1.6vh;
-    
+    font-size:1.4vh;
 }
-
-
-.footer{
-    
+#main1:target{
+    animation: target 1s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: rgb(228, 123, 123);
+    }
+}
+@keyframes photos {
+    from{ color: #000000;}
+    to{
+    background-color: #5584AC;    }
+}
+.footer{ 
     grid-area: footer;
     background-color: #3F72AF;
     display: grid;
@@ -158,7 +144,6 @@ body{
     'phonenum phonenum'
     'email email';
 }
-
 .footer a{
     text-decoration: none;
     color: black;
@@ -167,12 +152,13 @@ body{
     display: flex;
     grid-area: phonenum;
     font-style: italic;
-    font-weight: bolder;
     justify-content: center;
-
+    height: 2vh;
+    font-size: medium;
+    font-weight: bolder;
+    padding-top: 1vh;
 }
-
-.email{
+#email{
     display: flex;
     grid-area: email;
     font-style: italic;
@@ -180,12 +166,5 @@ body{
     align-items:baseline;
     justify-content: center;
     border-top: 1px  #000000;
-    
+    padding: 1vh;
 }
-
-
-.imghead{
-    width: 7vw;
-    
-}
-
