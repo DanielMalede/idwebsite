@@ -60,6 +60,11 @@ body{
 .me h1{
     font-size:xx-large;
 }
+.me h2{
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+}
 .main p{
     font-size: medium;
     font-weight: bold;
@@ -81,6 +86,11 @@ body{
     padding-bottom: 2vh;
     direction: rtl;
 }
+.gitpage h2{
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+}
 .gitpage span{
     font-family: 'Raleway', sans-serif;
     font-size: medium;
@@ -92,6 +102,8 @@ body{
 .gitpage a{
     text-decoration: none;
     color: #30AADD;
+    font-size:large;
+    font-weight: bolder;
 }
 .gitpage img{
     width: 14vw;
@@ -123,22 +135,40 @@ body{
     font-size:2.5vh;
     text-align: center;
 }
-#main1:target{
+#Summary:target{
     animation: target 1s alternate;
 }
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: #FF6B6B;
+        color: rgb(228, 123, 123);
     }
 }
-#photos:target{
-    animation: photos 1s alternate;
+#work:target{
+    animation: target 1s alternate;
 }
-@keyframes photos {
+@keyframes target {
     from{ color: #000000;}
     to{
-    background-color: #5584AC;    }
+        color: rgb(228, 123, 123);
+    }
+}
+#army:target{
+    animation: target 1s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: rgb(228, 123, 123);
+    }
+}#Hobbies:target{
+    animation: target 1s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: rgb(228, 123, 123);
+    }
 }
 .footer{
     grid-area: footer;
