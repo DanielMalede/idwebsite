@@ -37,7 +37,7 @@ body{
     grid-area: me;
     display: flex;
     flex-flow: column ;
-    height: 80vh;
+    height: auto;
 }
 .me img{
     width: 10vw;
@@ -61,17 +61,16 @@ body{
     font-size:xx-large;
 }
 .me h2{
-    font-size: medium;
+    font-size: large;
     text-align: center;
     text-decoration: underline;
 }
-.main p{
+.me p{
+    font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: bold;
     text-align: center;
-    padding: 1vw;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
+    margin-top: -1vh;
 }
 .gitpage{
     grid-area: gitpage;
@@ -87,7 +86,7 @@ body{
     direction: rtl;
 }
 .gitpage h2{
-    font-size: medium;
+    font-size: large;
     text-align: center;
     text-decoration: underline;
 }
@@ -130,13 +129,15 @@ body{
     display: flex;
     flex-direction: column;
     padding-top: -2vh;
-    text-decoration: none;
+    text-decoration:none;
     color:#0044bc;
     font-size:2.5vh;
     text-align: center;
+    border-bottom: 1px solid black
+    
 }
 #Summary:target{
-    animation: target 1s alternate;
+    animation: target 2s alternate;
 }
 @keyframes target {
     from{ color: #000000;}
@@ -145,7 +146,7 @@ body{
     }
 }
 #work:target{
-    animation: target 1s alternate;
+    animation: target 2s alternate;
 }
 @keyframes target {
     from{ color: #000000;}
@@ -154,7 +155,7 @@ body{
     }
 }
 #army:target{
-    animation: target 1s alternate;
+    animation: target 2s alternate;
 }
 @keyframes target {
     from{ color: #000000;}
@@ -162,7 +163,7 @@ body{
         color: rgb(228, 123, 123);
     }
 }#Hobbies:target{
-    animation: target 1s alternate;
+    animation: target 2s alternate;
 }
 @keyframes target {
     from{ color: #000000;}
