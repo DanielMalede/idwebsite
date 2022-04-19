@@ -7,8 +7,8 @@ body{
     display: grid;
     grid-template-areas:
     'header header header header'
-    'sidebar main main main'
-    'sidebar main main main'
+    'sidebar sidebar sidebar sidebar'
+    'main main main main'
     'footer footer footer footer';
     width: auto;
     height: auto;
@@ -61,45 +61,73 @@ body{
     font-size:medium;
     padding: 1vw;
     text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .me h2{
     font-size: medium;
     text-align: center;
     text-decoration: underline;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
-
 .me p{
     font-family: 'Raleway', sans-serif;
-    font-size: small;
+    font-size: 3vw;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    line-height: 2vh;
+    width: 38vw;
 }
-
 .gitpage{
     grid-area: gitpage;
     flex-flow: column;
     height: auto;
     display: flex;
     border-left: 0.5px solid black;
+    align-items: center;
+    text-align: center;
+
 }
 .gitpage h1{
-    font-size: medium;
-    text-align: center;
-    padding-bottom: 2vh;
+    font-size:medium;
+    text-align: right;
     direction: rtl;
+    padding-bottom: 1.5vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .gitpage h2{
-    font-size: medium;
+    font-size: large;
     text-align: center;
     text-decoration: underline;
-}
-.gitpage span{
-    font-family: 'Raleway', sans-serif;
-    font-size: small;
+    font-size: medium;
     font-weight: bold;
     text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.gitpage h3{
+    font-size: medium;
+    text-align: center;
+    margin-top: -1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.gitpage p{
+    font-size: small;
     padding-bottom: 1vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+
 }
 .gitpage a{
     text-decoration: none;
@@ -121,22 +149,26 @@ body{
     height: 11vh;
 }
 .sidebar{
-    width: auto;
     grid-area: sidebar;
-    background-color: #B9D7EA;
     display: flex;
-    flex-direction: column;
-}
-.sidebar p{
-    align-self: flex-start;
-}
-.sidebar a{
-    display: flex;
-    flex-direction: column;
-    padding-top: -2vh;
+    background-color: #77ACF1;
+    justify-content: space-between;
+    padding-bottom: 0.4vh;
     text-decoration: none;
-    color:#0044bc;
-    font-size:1.4vh;
+}
+
+.sidebar a{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-decoration-color: white;
+    font-size: medium;
+    width: 100%;
+    text-align: center;   
+    text-decoration: none;
+ 
+}
+.sidebar div{
+    display: flex;
 }
 #Summary:target{
     animation: target 2s alternate;
@@ -187,23 +219,21 @@ body{
 }
 .phonenum{
     display: flex;
-    grid-area: phonenum;
-    font-style: italic;
     justify-content: center;
-    height: 2vh;
-    font-size: medium;
-    font-weight: bolder;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
 }
-#email{
+.phonenum img{
+    display: flex;
+    grid-area: phonenum;
+    width: 5vw;
+    height: 5vh;
+}
+.email{
+    display: flex;
+    justify-content: center;
+}
+.email img{
     display: flex;
     grid-area: email;
-    font-style: italic;
-    font-weight: bolder;
-    align-items:baseline;
-    justify-content: center;
-    border-top: 1px solid black;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    width: 5vw;
+    height: 5vh;
 }

@@ -7,8 +7,8 @@ body{
     display: grid;
     grid-template-areas:
     'header header header header'
-    'sidebar main main main'
-    'sidebar main main main'
+    ' main main main sidebar'
+    ' main main main sidebar'
     'footer footer footer footer';
     width: auto;
     height: auto;
@@ -28,8 +28,8 @@ body{
     background-color: #D6E6F2;
     display: grid;
     grid-template-areas:
-    'me gitpage'
-    'photos photos';
+    'gitpage me '
+    'photos me';
     width: auto;
     height: auto;
 }
@@ -38,6 +38,7 @@ body{
     display: flex;
     flex-flow: column ;
     height: auto;
+    align-items: center;
 }
 .me img{
     width: 10vw;
@@ -58,50 +59,68 @@ body{
     animation: danpic 1.5s alternate;
 }
 .me h1{
-    font-size:xx-large;
+    font-size:x-large;
+    direction: rtl;
+    text-align: center;
 }
 .me h2{
-    font-size: large;
+    font-size: 4vh;
     text-align: center;
     text-decoration: underline;
 }
 .me p{
     font-family: 'Raleway', sans-serif;
-    font-size: medium;
+    font-size: 2vh;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
+    line-height: 5vh;
+    width: 35vw;
 }
 .gitpage{
     grid-area: gitpage;
     flex-flow: column;
     height: auto;
+    width: auto;
     display: flex;
     border-left:0.5px solid black;
+    align-items: center;
+    flex-direction: column;
 }
 .gitpage h1{
     font-size:xx-large;
-    text-align: right;
-    padding-bottom: 2vh;
+    text-align: center;
     direction: rtl;
+
 }
 .gitpage h2{
     font-size: large;
     text-align: center;
     text-decoration: underline;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: -1vh;    
 }
-.gitpage span{
-    font-family: 'Raleway', sans-serif;
+.gitpage h3{
     font-size: medium;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
-    padding: 2vh;
+    line-height: 5vh;
+}
+.gitpage p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1vh;
+    line-height: 4vh;
+    width: 35vw;
 }
 .gitpage a{
     text-decoration: none;
     color: #30AADD;
-    font-size:large;
+    font-size:xx-large;
     font-weight: bolder;
 }
 .gitpage img{
@@ -110,9 +129,11 @@ body{
 }
 #photos{
     grid-area: photos;
-    border: 1px solid black;
     background-color: BAD7DF;
     height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #photos img{
     width: 13.8vw;
@@ -121,20 +142,25 @@ body{
 .sidebar{
     width: auto;
     grid-area: sidebar;
-    background-color: #B9D7EA;
+    background-color: #77ACF1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
+    
+}
+.sidebar div{
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    margin-top: 2vh;
+    background-color: #30AADD;
+    width: 100%;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 .sidebar a{
-    display: flex;
-    flex-direction: column;
-    padding-top: -2vh;
-    text-decoration:none;
-    color:#0044bc;
-    font-size:2.5vh;
-    text-align: center;
-    border-bottom: 1px solid black
-    
+    color: white;
 }
 #Summary:target{
     animation: target 2s alternate;
@@ -142,7 +168,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #D32D2D;
     }
 }
 #work:target{
@@ -151,7 +177,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #D32D2D;
     }
 }
 #army:target{
@@ -160,7 +186,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #D32D2D;
     }
 }#Hobbies:target{
     animation: target 2s alternate;
@@ -168,10 +194,10 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #D32D2D;
     }
 }
-.footer{
+.footer{ 
     grid-area: footer;
     background-color: #3F72AF;
     display: grid;
@@ -185,24 +211,20 @@ body{
 }
 .phonenum{
     display: flex;
-    grid-area: phonenum;
-    font-style: italic;
     justify-content: center;
-    height: 2vh;
-    font-size: x-large;
-    font-weight: bolder;
-    padding-top: 0.5vh;
-    padding-bottom: 1.5vh;
 }
-#email{
+.phonenum img{
+    display: flex;
+    grid-area: phonenum;
+    width: 4vw;
+    height: 7vh;}
+.email{
+    display: flex;
+    justify-content: center;
+}
+.email img{
     display: flex;
     grid-area: email;
-    font-style: italic;
-    font-weight: bolder;
-    align-items:baseline;
-    font-size: x-large;
-    justify-content: center;
-    border-top: 1px solid black;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    width: 5vw;
+    height: 7vh;
 }
