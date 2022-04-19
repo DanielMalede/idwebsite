@@ -29,9 +29,10 @@ body{
     display: grid;
     grid-template-areas:
     'me gitpage'
-    'photos photos';
+    'me photos';
     width: auto;
     height: auto; 
+    
 }
 .me{
     grid-area: me;
@@ -94,7 +95,7 @@ body{
 }
 .gitpage h1{
     font-size:medium;
-    text-align: right;
+    text-align: center;
     direction: rtl;
     padding-bottom: 1.5vh;
     padding-right: 2vw;
@@ -139,14 +140,55 @@ body{
     width: 17vw;
     height: 8vh; 
 }
-#photos{
+/* .photos{
     grid-area: photos;
     background-color: #BAD7DF;
-    height: auto;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+#photosimg{
+    width: 40vw;
+    height: 20vh;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: photos 6s linear  ;
+    animation-direction:alternate-reverse ;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
 }
-#photos img{
-    width: 13.8vw;
-    height: 11vh;
+@keyframes photos {
+    0%{
+        background-image: url(transpic.jpeg);
+        background-repeat: no-repeat; 
+        background-size: 100% 100%;        
+       
+    }
+    25%{
+        background-image: url(transpic2.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+        }
+    50%{
+        background-image: url(transpic3.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+    }        
+    75%{
+        background-image: url(transpic4.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+        }
+    100%{
+        background-image: url(transpic5.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+        }
 }
 .sidebar{
     grid-area: sidebar;
