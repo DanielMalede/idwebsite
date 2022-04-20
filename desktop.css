@@ -129,6 +129,18 @@ body{
     width: 14vw;
     height:12vh; 
 }
+.imgprojc{
+    width: 30vw;
+    height: 20vh;
+    background-image:url(ynet.png);
+    background-size: 100% 100%;
+}
+.imgprojc1{
+    width: 30vw;
+    height: 20vh;
+    background-image:url(piano.png);
+    background-size: 100% 100%;
+}
 .photos{
     grid-area: photos;
     display: flex;
