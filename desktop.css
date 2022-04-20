@@ -129,17 +129,26 @@ body{
     width: 14vw;
     height:12vh; 
 }
-.imgprojc{
+.ynetimg{
     width: 20vw;
     height: 20vh;
     background-image:url(ynet.png);
     background-size: 100% 100%;
+    border: 1px solid black;
 }
-.imgprojc1{
+.pianoimg{
     width: 20vw;
     height: 20vh;
     background-image:url(piano.png);
     background-size: 100% 100%;
+    border: 1px solid black;
+}
+.animeimg{
+    width: 20vw;
+    height: 20vh;
+    background-image:url(anime.png);
+    background-size: 100% 100%;
+    border: 1px solid black;
 }
 .photos{
     grid-area: photos;
@@ -159,7 +168,8 @@ body{
     height: 40vh;
     border: 1px solid black;
     animation: photos 8s linear alternate-reverse infinite;
-    }
+    
+}
 @keyframes photos {
     0%{
         background-image: url(transpic.jpeg);
