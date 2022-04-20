@@ -98,7 +98,6 @@ body{
     font-size:medium;
     text-align: center;
     direction: rtl;
-    
 }
 .gitpage h2{
     font-size: large;
@@ -121,8 +120,6 @@ body{
     font-weight: bolder;
     padding-left: 5vw;
     padding-right: 5vw;
-
-
 }
 .gitpage a{
     text-decoration: none;
@@ -152,16 +149,15 @@ body{
     border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: photos 6s linear alternate-reverse infinite;
+    animation: photos 6s linear alternate infinite;
 }
 @keyframes photos {
     0%{
         background-image: url(transpic.jpeg);
         background-repeat: no-repeat; 
         background-size: 100% 100%;        
-       
     }
-    0%{
+    20%{
         background-image: url(transpic2.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;        

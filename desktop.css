@@ -18,10 +18,10 @@ body{
     background-color: #112D4E;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;    
 }
 .imghead{
-    width: 4vw;
+    width: 3vw;
 }
 .main{
     grid-area: main;
@@ -146,14 +146,14 @@ body{
     width: 30vw;
     height: 40vh;
     border: 1px solid black;
-    animation: photos 6s linear alternate-reverse infinite;
+    animation: photos 8s linear alternate-reverse infinite;
     }
 @keyframes photos {
     0%{
         background-image: url(transpic.jpeg);
         background-size: 100% 100%;        
     }
-    0%{
+    20%{
         background-image: url(transpic2.jpeg);
         background-size: 100% 100%;        
         }
@@ -261,8 +261,8 @@ body{
 .phonenum img{
     display: flex;
     grid-area: phonenum;
-    width: 4vw;
-    height: 7vh;}
+    width: 3vw;
+    height: 6vh;}
 #email{
     display: flex;
     justify-content: center;
@@ -270,6 +270,6 @@ body{
 #email img{
     display: flex;
     grid-area: email;
-    width: 5vw;
-    height: 7vh;
+    width: 4vw;
+    height: 6vh;
 }
