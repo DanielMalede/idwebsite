@@ -132,14 +132,14 @@ body{
     height: 9vh; 
 }
 .imgprojc{
-    width: 50vw;
+    width: 40vw;
     height: 13vh;
     background-image:url(ynet.png);
     background-size: 100% 100%;
     border: 1px solid black;
 }
 .imgprojc1{
-    width: 50vw;
+    width: 40vw;
     height: 13vh;
     background-image:url(piano.png);
     background-size: 100% 100%;
