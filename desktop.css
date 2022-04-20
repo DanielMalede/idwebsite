@@ -77,7 +77,6 @@ body{
     text-align: center;
     margin-top: -1vh;
     line-height: 5vh;
-    width: 35vw;
 }
 .gitpage{
     grid-area: gitpage;
@@ -85,19 +84,13 @@ body{
     height: auto;
     width: auto;
     display: flex;
-    border-left:0.5px solid black;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
-
 }
 .gitpage h1{
     font-size:xx-large;
     text-align: center;
     direction: rtl;
-
 }
 .gitpage h2{
     font-size: large;
@@ -113,6 +106,8 @@ body{
     text-align: center;
     margin-top: -1vh;
     line-height: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 .gitpage p{
     font-family: 'Raleway', sans-serif;
@@ -122,6 +117,7 @@ body{
     margin-top: -1vh;
     line-height: 4vh;
     width: 35vw;
+    padding-top: 2vh;
 }
 .gitpage a{
     text-decoration: none;
@@ -135,79 +131,71 @@ body{
 }
 .photos{
     grid-area: photos;
-    background-color: BAD7DF;
-    height: 15vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
-
-.photos{
-    display: flex;
-    align-items: flex-end;
-    align-self: center;
-    align-content: center;
-    justify-content: center;
+.photos p{
+    padding-bottom: 2vh;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 #photosimg{
-    width: 40vw;
-    height: 30vh;
+    width: 30vw;
+    height: 40vh;
     border: 1px solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: photos 6s linear  ;
-    animation-direction:alternate-reverse ;
-    animation-iteration-count: infinite;
+    animation: photos 6s linear alternate-reverse infinite;
     }
 @keyframes photos {
     0%{
         background-image: url(transpic.jpeg);
-        background-repeat: no-repeat; 
         background-size: 100% 100%;        
-        
     }
-    25%{
+    0%{
         background-image: url(transpic2.jpeg);
-        background-repeat: no-repeat;
         background-size: 100% 100%;        
         }
-    50%{
+    40%{
         background-image: url(transpic3.jpeg);
-        background-repeat: no-repeat;
         background-size: 100% 100%;        
     }        
-    75%{
+    60%{
         background-image: url(transpic4.jpeg);
-        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+        }
+    80%{
+        background-image: url(transpic5.jpeg);
         background-size: 100% 100%;        
         }
     100%{
-        background-image: url(transpic5.jpeg);
-        background-repeat: no-repeat;
+        background-image: url(transpic6.jpeg);
         background-size: 100% 100%;        
         }
-}
+    }
 .sidebar{
     width: auto;
     grid-area: sidebar;
-    background-color: #77ACF1;
+    background-color: #3F72AF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+    border-bottom: 1px solid black;
 }
 .sidebar div{
     font-family: 'Bebas Neue', cursive;
     font-size: large;
-    margin-top: 2vh;
-    background-color: #30AADD;
-    width: 100%;
+    background-color: #035397;
+    width: 8vw;
+    top: 2vh;
     text-align: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    border: 2.5px solid #8FBDD3;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
 }
 .sidebar a{
-    color: white;
+    color: #8FBDD3;
 }
 #Summary:target{
     animation: target 2s alternate;
@@ -235,7 +223,17 @@ body{
     to{
         color: #D32D2D;
     }
-}#Hobbies:target{
+}
+#Hobbies:target{
+    animation: target 2s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: #D32D2D;
+    }
+}
+#gallery:target{
     animation: target 2s alternate;
 }
 @keyframes target {
@@ -265,11 +263,11 @@ body{
     grid-area: phonenum;
     width: 4vw;
     height: 7vh;}
-.email{
+#email{
     display: flex;
     justify-content: center;
 }
-.email img{
+#email img{
     display: flex;
     grid-area: email;
     width: 5vw;

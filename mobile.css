@@ -28,21 +28,24 @@ body{
     background-color: #D6E6F2;
     display: grid;
     grid-template-areas:
-    'me gitpage'
-    'me photos';
+    'gitpage me'
+    'photos photos';
     width: auto;
     height: auto; 
-    
+    display: flex;
+    align-self: center;
+    justify-content: center;   
+    flex-direction: column; 
+    align-items: center;
 }
 .me{
     grid-area: me;
-    display: flex;
-    flex-flow: column ;
-    height: a;
+    order: 1;
+    
 }
 .me img{
-    width: 15vw;
-    height: 8vh;
+    width: 19vw;
+    height: 10vh;
     border-radius: 50%;
 }
 @keyframes danpic {
@@ -51,8 +54,8 @@ body{
     }
     to{
         box-shadow: 2px 2px 5px black;
-        height: 8.5vh;
-        width: 15.5vw;
+        height: 10.5vh;
+        width: 19.5vw;
     }
 }
 .me img:hover{
@@ -78,40 +81,31 @@ body{
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
+    line-height: 2vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    line-height: 2vh;
-    width: 38vw;
 }
 .gitpage{
     grid-area: gitpage;
     flex-flow: column;
     height: auto;
     display: flex;
-    border-left: 0.5px solid black;
     align-items: center;
     text-align: center;
-
+    order:2;
 }
 .gitpage h1{
     font-size:medium;
     text-align: center;
     direction: rtl;
-    padding-bottom: 1.5vh;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    
 }
 .gitpage h2{
     font-size: large;
     text-align: center;
     text-decoration: underline;
-    font-size: medium;
     font-weight: bold;
     text-align: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
 }
 .gitpage h3{
     font-size: medium;
@@ -137,30 +131,28 @@ body{
     font-weight: bolder;
 }
 .gitpage img{
-    width: 17vw;
-    height: 8vh; 
+    width: 26vw;
+    height: 9vh; 
 }
-/* .photos{
-    grid-area: photos;
-    background-color: #BAD7DF;
-    height: 15vh;
+.photos{
     display: flex;
-    flex-direction: row;
-} */
-
-
+    flex-direction: column;
+    order: 3;
+    padding-bottom: 2vh;
+}
+.photos p{
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
 #photosimg{
-    width: 40vw;
+    width: 50vw;
     height: 20vh;
     border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: photos 6s linear  ;
-    animation-direction:alternate-reverse ;
-    animation-iteration-count: infinite;
-    text-align: center;
-    margin-bottom: 5vh;
-    margin-left: 5vw;
+    animation: photos 6s linear alternate-reverse infinite;
 }
 @keyframes photos {
     0%{
@@ -169,27 +161,32 @@ body{
         background-size: 100% 100%;        
        
     }
-    25%{
+    0%{
         background-image: url(transpic2.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;        
         }
-    50%{
+    40%{
         background-image: url(transpic3.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;        
     }        
-    75%{
+    60%{
         background-image: url(transpic4.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;        
         }
-    100%{
+    80%{
         background-image: url(transpic5.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;        
         }
-}
+    100%{
+        background-image: url(transpic6.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
+        }
+    }
 .sidebar{
     grid-area: sidebar;
     display: flex;
@@ -269,11 +266,11 @@ body{
     width: 5vw;
     height: 5vh;
 }
-.email{
+#email{
     display: flex;
     justify-content: center;
 }
-.email img{
+#email img{
     display: flex;
     grid-area: email;
     width: 5vw;
