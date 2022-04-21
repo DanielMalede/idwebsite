@@ -44,8 +44,8 @@ body{
     
 }
 .me img{
-    width: 19vw;
-    height: 10vh;
+    width: 20vw;
+    height: 12vh;
     border-radius: 50%;
 }
 @keyframes danpic {
@@ -77,13 +77,13 @@ body{
 }
 .me p{
     font-family: 'Raleway', sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
     line-height: 2vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 .gitpage{
     grid-area: gitpage;
@@ -114,12 +114,13 @@ body{
     padding-right: 5vw;
 }
 .gitpage p{
-    font-size: small;
+    font-size: 2vh;
     padding-bottom: 1vh;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    line-height: 43h;
 }
 .gitpage a{
     text-decoration: none;
@@ -129,24 +130,24 @@ body{
 }
 .gitpage img{
     width: 26vw;
-    height: 9vh; 
+    height: 11vh; 
 }
 .ynetimg{
-    width: 40vw;
+    width: 35vw;
     height: 13vh;
     background-image:url(ynet.png);
     background-size: 100% 100%;
     border: 1px solid black;
 }
 .pianoimg{
-    width: 40vw;
+    width: 35vw;
     height: 13vh;
     background-image:url(piano.png);
     background-size: 100% 100%;
     border: 1px solid black;
 }
 .animeimg{
-    width: 40vw;
+    width: 35vw;
     height: 13vh;
     background-image:url(anime.png);
     background-size: 100% 100%;
@@ -170,7 +171,7 @@ body{
     border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: photos 6s linear alternate infinite;
+    animation: photos 15s linear alternate infinite;
 }
 @keyframes photos {
     0%{
@@ -232,7 +233,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #FA26A0;
     }
 }
 #work:target{
@@ -241,7 +242,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #FA26A0;
     }
 }
 #army:target{
@@ -250,7 +251,7 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #FA26A0;
     }
 }#Hobbies:target{
     animation: target 2s alternate;
@@ -258,7 +259,16 @@ body{
 @keyframes target {
     from{ color: #000000;}
     to{
-        color: rgb(228, 123, 123);
+        color: #FA26A0;
+    }
+}
+#projects:target{
+    animation: target 2s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: #FA26A0;
     }
 }
 .footer{ 

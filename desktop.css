@@ -29,7 +29,7 @@ body{
     display: grid;
     grid-template-areas:
     'gitpage me '
-    'photos me';
+    'photos photos';
     width: auto;
     height: auto;
 }
@@ -98,36 +98,37 @@ body{
     text-decoration: underline;
     font-size: medium;
     font-weight: bold;
-    margin-top: -1vh;    
+    font-size: 2.5vh;    
 }
 .gitpage h3{
-    font-size: medium;
+    font-size: 2.5vh;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
     line-height: 5vh;
     padding-left: 3vw;
     padding-right: 3vw;
+    width: 45vw;
 }
 .gitpage p{
     font-family: 'Raleway', sans-serif;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: bold;
     text-align: center;
     margin-top: -1vh;
-    line-height: 4vh;
+    line-height: 5vh;
     width: 35vw;
     padding-top: 2vh;
 }
 .gitpage a{
     text-decoration: none;
     color: #30AADD;
-    font-size:xx-large;
+    font-size:3vh;
     font-weight: bolder;
 }
 .gitpage img{
     width: 14vw;
-    height:12vh; 
+    height:15vh; 
 }
 .ynetimg{
     width: 20vw;
@@ -155,6 +156,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 4vh;
 }
 .photos p{
     padding-bottom: 2vh;
@@ -167,7 +169,7 @@ body{
     width: 30vw;
     height: 40vh;
     border: 1px solid black;
-    animation: photos 8s linear alternate-reverse infinite;
+    animation: photos 15s linear alternate infinite;
     
 }
 @keyframes photos {
@@ -262,6 +264,15 @@ body{
     from{ color: #000000;}
     to{
         color: #D32D2D;
+    }
+}
+#projects:target{
+    animation: target 2s alternate;
+}
+@keyframes target {
+    from{ color: #000000;}
+    to{
+        color: #FA26A0;
     }
 }
 .footer{ 
