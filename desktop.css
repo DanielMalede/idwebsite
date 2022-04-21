@@ -170,7 +170,6 @@ body{
     height: 40vh;
     border: 1px solid black;
     animation: photos 15s linear alternate infinite;
-    
 }
 @keyframes photos {
     0%{

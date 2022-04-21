@@ -213,7 +213,6 @@ body{
     padding-bottom: 0.4vh;
     text-decoration: none;
 }
-
 .sidebar a{
     font-family: 'Bebas Neue', cursive;
     color: white;
@@ -222,7 +221,6 @@ body{
     width: 100%;
     text-align: center;   
     text-decoration: none;
- 
 }
 .sidebar div{
     display: flex;
