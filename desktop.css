@@ -69,6 +69,8 @@ body{
     font-size: 4vh;
     text-align: center;
     text-decoration: underline;
+    text-shadow:30px 30px 0px rgba(206,89,55,0);
+    color: #1b529c;
 }
 .me p{
     font-family: 'Raleway', sans-serif;
@@ -93,12 +95,12 @@ body{
     direction: rtl;
 }
 .gitpage h2{
-    font-size: large;
+    font-size: 4vh;
     text-align: center;
     text-decoration: underline;
-    font-size: medium;
     font-weight: bold;
-    font-size: 2.5vh;    
+    text-shadow:30px 30px 0px rgba(206,89,55,0);
+    color: #1b529c;
 }
 .gitpage h3{
     font-size: 2.5vh;
@@ -175,26 +177,32 @@ body{
     0%{
         background-image: url(transpic.jpeg);
         background-size: 100% 100%;        
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
     }
     20%{
         background-image: url(transpic2.jpeg);
-        background-size: 100% 100%;        
+        background-size: 100% 100%;     
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
         }
     40%{
         background-image: url(transpic3.jpeg);
-        background-size: 100% 100%;        
+        background-size: 100% 100%;      
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
     }        
     60%{
         background-image: url(transpic4.jpeg);
         background-size: 100% 100%;        
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
         }
     80%{
         background-image: url(transpic5.jpeg);
-        background-size: 100% 100%;        
+        background-size: 100% 100%;      
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
         }
     100%{
         background-image: url(transpic6.jpeg);
         background-size: 100% 100%;        
+        box-shadow: 0px 0px 0px 8px #7e9ef6, 0px 0px 0px 10px #7a9bf5, 0px 0px 0px 18px #a0b7f7, 0px 0px 0px 25px #c4d2f8, 0px 0px 0px 32px #DADDDA,  0px 0px 0px 0px rgba(65,103,255,0);
         }
     }
 .sidebar{
@@ -215,7 +223,7 @@ body{
     text-align: center;
     border: 2.5px solid #8FBDD3;
     padding-bottom: 2vh;
-    padding-top: 2vh;
+    padding-top: 3vh;
 }
 .sidebar a{
     color: #8FBDD3;
