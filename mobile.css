@@ -50,12 +50,12 @@ body{
 }
 @keyframes danpic {
     from{
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 4px 4px 5px black;
     }
     to{
-        box-shadow: 2px 2px 5px black;
-        height: 10.5vh;
-        width: 19.5vw;
+        box-shadow: 4px 4px 5px black;
+        height: 12.5vh;
+        width: 22.5vw;
     }
 }
 .me img:hover{
@@ -74,6 +74,8 @@ body{
     text-decoration: underline;
     padding-left: 5vw;
     padding-right: 5vw;
+    text-shadow:30px 30px 0px rgba(206,89,55,0);
+    color: #1b529c;
 }
 .me p{
     font-family: 'Raleway', sans-serif;
@@ -105,6 +107,8 @@ body{
     text-decoration: underline;
     font-weight: bold;
     text-align: center;
+    text-shadow:30px 30px 0px rgba(206,89,55,0);
+    color: #1b529c;
 }
 .gitpage h3{
     font-size: medium;
